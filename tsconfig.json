@@ -8,7 +8,7 @@
     "esModuleInterop": true,
     "lib": ["ESNext"],
     "baseUrl": ".",
-    "allowJs": true,
+    "allowJs": true
   },
   "include": ["packages/*"],
   "exclude": ["node_modules"]
