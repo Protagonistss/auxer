@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Protagonistss/aux.git"
+    "url": "git+https://github.com/Protagonistss/auxer.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Protagonistss/aux/issues"
+    "url": "https://github.com/Protagonistss/auxer/issues"
   },
-  "homepage": "https://github.com/Protagonistss/aux#readme",
+  "homepage": "https://github.com/Protagonistss/auxer#readme",
   "devDependencies": {
     "typescript": "^4.6.2"
   }
