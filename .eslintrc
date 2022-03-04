@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "extends": ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  "extends": ["@ithinku/eslint-config-ts", "plugin:prettier/recommended"],
   "plugins": ["@typescript-eslint"],
   "env": {
     "browser": true,

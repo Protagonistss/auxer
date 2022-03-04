@@ -5,6 +5,7 @@ lockfileVersion: 5.3
 importers:
   .:
     specifiers:
+      '@ithinku/eslint-config-ts': ^0.0.1
       '@typescript-eslint/eslint-plugin': ^5.13.0
       '@typescript-eslint/parser': ^5.13.0
       eslint: ^8.10.0
@@ -13,6 +14,7 @@ importers:
       prettier: ^2.5.1
       typescript: ^4.6.2
     devDependencies:
+      '@ithinku/eslint-config-ts': 0.0.1_eslint@8.10.0+typescript@4.6.2
       '@typescript-eslint/eslint-plugin': 5.13.0_33fffc354ccfa91fbe7d1677b9395a0a
       '@typescript-eslint/parser': 5.13.0_eslint@8.10.0+typescript@4.6.2
       eslint: 8.10.0
@@ -55,6 +57,21 @@ packages:
   /@humanwhocodes/object-schema/1.2.1:
     resolution:
       {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@ithinku/eslint-config-ts/0.0.1_eslint@8.10.0+typescript@4.6.2:
+    resolution:
+      {integrity: sha512-nPRFyvBkPg3MXNr+UC6vck52BNSln2koYRku7DVi41wrvFvXGxuElVwsEi1qSAU/HwzaIIKtbweGscBhqb6HYw==}
+    peerDependencies:
+      eslint: ^8.10.0
+      typescript: ^4.6.2
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 5.13.0_33fffc354ccfa91fbe7d1677b9395a0a
+      '@typescript-eslint/parser': 5.13.0_eslint@8.10.0+typescript@4.6.2
+      eslint: 8.10.0
+      typescript: 4.6.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
