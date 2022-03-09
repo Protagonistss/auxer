@@ -6,7 +6,7 @@
     "strict": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "lib": ["esnext"],
+    "lib": ["esnext", "dom"],
     "baseUrl": ".",
     "allowJs": false,
     "rootDir": ".",

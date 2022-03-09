@@ -1,45 +1,37 @@
 /** @format */
-
-import { TReturnBool } from '../typings'
+import type { TUnknownReturnBool } from '../types'
 
 const _toString = Object.prototype.toString
 
-export const isObject: TReturnBool = arg => {
+export const isObject: TUnknownReturnBool = arg => {
   if (_toString.call(arg) === '[object Object]') {
     return true
   }
   return false
 }
 
-export const isNull: TReturnBool = arg => {
+export const isNull: TUnknownReturnBool = arg => {
   if (_toString.call(arg) === '[object Null]') {
     return true
   }
   return false
 }
 
-export const isUndefined: TReturnBool = arg => {
+export const isUndefined: TUnknownReturnBool = arg => {
   if (_toString.call(arg) === '[object Undefined]') {
     return true
   }
   return false
 }
 
-export const isArray: TReturnBool = arg => {
+export const isArray: TUnknownReturnBool = arg => {
   if (_toString.call(arg) === '[object Array]') {
     return true
   }
   return false
 }
 
-export const isString: TReturnBool = arg => {
-  if (_toString.call(arg) === '[object String]') {
-    return true
-  }
-  return false
-}
-
-export const isExist: TReturnBool = arg => {
+export const isExist: TUnknownReturnBool = arg => {
   if (!arg) {
     return false
   }
@@ -50,4 +42,20 @@ export const isExist: TReturnBool = arg => {
     return false
   }
   return true
+}
+
+export const isString: TUnknownReturnBool = arg => {
+  return typeof arg === 'string'
+}
+
+export const isNumber: TUnknownReturnBool = arg => {
+  return typeof arg === 'number'
+}
+
+export const isBool: TUnknownReturnBool = arg => {
+  return typeof arg === 'boolean'
+}
+
+export const isInt: TUnknownReturnBool = arg => {
+  return isNumber(arg) && (arg as number) % 1 === 0
 }
