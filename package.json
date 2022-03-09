@@ -1,11 +1,11 @@
 {
   "name": "auxer",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint --ext .ts --fix .",
-    "format": "prettier --write ."
+    "format": "npx prettier --write ."
   },
   "repository": {
     "type": "git",
