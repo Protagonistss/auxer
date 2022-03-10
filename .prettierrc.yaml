@@ -8,4 +8,4 @@ tabWidth: 2
 useTabs: false
 insertPragma: true
 arrowParens: avoid
-trailingComma: all
+trailingComma: none

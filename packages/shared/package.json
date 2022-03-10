@@ -1,12 +1,20 @@
 {
   "name": "@auxer/shared",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
+  "version": "0.0.4",
+  "description": "this is a utils lib for design",
+  "module": "dist/shared.js",
+  "types": "./types/index.d.ts",
+  "files": [
+    "index.js",
+    "dist",
+    "types"
+  ],
+  "keywords": [
+    "utils"
+  ],
   "author": "huangshan <protagonisths@gmail.com> (https://github.com/Protagonistss)",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }

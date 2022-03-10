@@ -1,3 +1,2 @@
 /** @format */
-
-module.exports = {}
+module.exports = require('./dist/shared.js')

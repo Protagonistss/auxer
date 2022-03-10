@@ -12,6 +12,11 @@ this is utils lib for design platform
 pnpm add @auxer/shared -D
 ```
 
+# Format
+
+- [x] esm
+- [ ] cjs
+
 # Contact
 
 huangshan
