@@ -10,7 +10,8 @@
     "baseUrl": ".",
     "allowJs": false,
     "rootDir": ".",
-    "outDir": "dist"
+    "outDir": "dist",
+    "declaration": true
   },
   "include": ["packages/*/src"],
   "exclude": ["node_modules"]
