@@ -8,7 +8,9 @@
     "lint": "npx eslint --ext .ts --fix .",
     "format": "npx prettier --write .",
     "docs:dev": "pnpm -C docs dev",
-    "docs:build": "pnpm -C docs build"
+    "docs:build": "pnpm -C docs build",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "engines": {
     "node": ">=v16.14.0"
@@ -30,6 +32,7 @@
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
     "@vue/shared": "^3.2.31",
+    "c8": "^7.11.0",
     "esbuild": "^0.14.25",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
@@ -38,6 +41,7 @@
     "prettier": "^2.5.1",
     "typescript": "^4.5.4",
     "unplugin-vue-components": "^0.18.0",
-    "vite": "^2.8.0"
+    "vite": "^2.8.0",
+    "vitest": "^0.6.0"
   }
 }

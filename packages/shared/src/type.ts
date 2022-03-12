@@ -32,13 +32,13 @@ export const isArray: TUnknownReturnBool = arg => {
 }
 
 export const isExist: TUnknownReturnBool = arg => {
-  if (!arg) {
-    return false
-  }
   if (isNull(arg)) {
     return false
   }
   if (isUndefined(arg)) {
+    return false
+  }
+  if (!arg) {
     return false
   }
   return true
