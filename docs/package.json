@@ -8,6 +8,8 @@
   },
   "author": "huangshan <protagonisths@gmail.com> (https://github.com/Protagonistss)",
   "devDependencies": {
+    "unplugin-vue-components": "^0.18.0",
+    "vite": "^2.8.0",
     "vitepress": "^0.22.3"
   }
 }
