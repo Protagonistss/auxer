@@ -7,7 +7,15 @@ export default defineConfig({
   description: 'Auxer',
   head: [
     ['meta', { name: 'theme-color', content: '#ffffff' }],
-    ['link', { rel: 'alternate icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' }]
+    [
+      'link',
+      {
+        rel: 'alternate icon',
+        href: '/favicon.ico',
+        type: 'image/png',
+        sizes: '16x16'
+      }
+    ]
   ],
   themeConfig: {
     nav: [{ text: 'Guide', link: '/guide/' }]
