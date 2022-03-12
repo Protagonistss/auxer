@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "author": "huangshan <protagonisths@gmail.com> (https://github.com/Protagonistss)",
   "license": "MIT",
-  "keywords": ["form designer"],
+  "keywords": [
+    "form designer"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",

@@ -1,4 +1,4 @@
 # @format
-
 packages:
-  - 'packages/**'
+  - docs
+  - packages/**
