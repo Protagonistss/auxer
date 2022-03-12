@@ -50,6 +50,7 @@ importers:
 
   examples:
     specifiers:
+      '@auxer/designer': workspace:*
       '@vitejs/plugin-vue': ^2.2.0
       typescript: ^4.5.4
       vite: ^2.8.0
@@ -58,6 +59,7 @@ importers:
     dependencies:
       vue: 3.2.31
     devDependencies:
+      '@auxer/designer': link:../packages/designer
       '@vitejs/plugin-vue': 2.2.4_vite@2.8.6+vue@3.2.31
       typescript: 4.6.2
       vite: 2.8.6
@@ -68,16 +70,12 @@ importers:
 
   packages/designer:
     specifiers:
-      '@vitejs/plugin-vue': ^2.2.0
       vite: ^2.8.0
       vue: ^3.2.25
-      vue-tsc: ^0.29.8
     dependencies:
       vue: 3.2.31
     devDependencies:
-      '@vitejs/plugin-vue': 2.2.4_vite@2.8.6+vue@3.2.31
       vite: 2.8.6
-      vue-tsc: 0.29.8_typescript@4.6.2
 
   packages/engine:
     specifiers: {}

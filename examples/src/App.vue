@@ -2,6 +2,7 @@
 import Examples from './components/Examples.vue'
 </script>
 <template>
+  <div id="form"></div>
   <Examples/>
 </template>
 
