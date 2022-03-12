@@ -1,0 +1,13 @@
+{
+  "name": "docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress --port 3100",
+    "build": "vitepress build"
+  },
+  "author": "huangshan <protagonisths@gmail.com> (https://github.com/Protagonistss)",
+  "devDependencies": {
+    "vitepress": "^0.22.3"
+  }
+}

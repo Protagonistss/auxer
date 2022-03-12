@@ -1,6 +1,6 @@
 <!-- @format -->
 
-# aux
+# Auxer
 
 ## creater
 
@@ -10,6 +10,7 @@
 
 # TODO
 
+- [ ] docs
 - [ ] code style
 - [ ] code format
 - [ ] code release
