@@ -11,8 +11,11 @@
     "allowJs": false,
     "rootDir": ".",
     "outDir": "dist",
-    "declaration": true
+    "declaration": true,
+    "jsx": "preserve",
+    "types": [
+      "vite/client"
+    ]
   },
-  "include": ["packages/*/src"],
   "exclude": ["node_modules"]
 }

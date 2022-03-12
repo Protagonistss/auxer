@@ -4,6 +4,7 @@
   "description": "A utils for Designer",
   "packageManager": "pnpm@6.32.2",
   "scripts": {
+    "play": "pnpm -C examples dev",
     "build": "node scripts/build.js",
     "lint": "npx eslint --ext .ts --fix .",
     "format": "npx prettier --write .",
