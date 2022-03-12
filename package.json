@@ -1,12 +1,17 @@
 {
   "name": "auxer",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A utils for Designer",
+  "packageManager": "pnpm@6.32.2",
   "scripts": {
     "build": "node scripts/build.js",
     "lint": "npx eslint --ext .ts --fix .",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write .",
+    "docs:dev": "pnpm -C docs dev",
+    "docs:build": "pnpm -C docs build"
+  },
+  "engines": {
+    "node": ">=v16.14.0"
   },
   "repository": {
     "type": "git",

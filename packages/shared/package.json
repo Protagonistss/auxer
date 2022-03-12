@@ -4,6 +4,9 @@
   "description": "this is a utils lib for design",
   "module": "dist/shared.js",
   "types": "./types/index.d.ts",
+  "buildOptions": {
+    "ready": true
+  },
   "files": [
     "index.js",
     "dist",

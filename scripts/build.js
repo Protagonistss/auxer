@@ -3,7 +3,9 @@ const { readdirSync } = require('fs')
 const { resolve } = require('path')
 const { build } = require('esbuild')
 
-const packages = readdirSync(resolve(__dirname, '../packages'))
+const packages = readdirSync(resolve(__dirname, '../packages')).filter(
+  pck => require(resolve(__dirname, `../packages/${pck}/package.json`)).buildOptions.ready
+)
 
 const buildPck = pck => {
   build({

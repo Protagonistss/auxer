@@ -1,9 +1,12 @@
 {
   "name": "@auxer/parser",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "private": true,
   "main": "index.js",
+  "buildOptions": {
+    "ready": false
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

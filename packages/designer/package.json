@@ -7,6 +7,9 @@
   "keywords": [
     "form designer"
   ],
+  "buildOptions": {
+    "ready": false
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
