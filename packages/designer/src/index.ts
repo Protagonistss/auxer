@@ -1,3 +1,5 @@
+/** @format */
+
 import { h, createApp } from 'vue'
 
 const app = createApp({

@@ -4,7 +4,8 @@ importers:
 
   .:
     specifiers:
-      '@ithinku/eslint-config-ts': ^0.0.2
+      '@ithinku/eslint-config-ts': ^0.0.4
+      '@ithinku/tsconfig': ^0.0.4
       '@types/node': ^17.0.21
       '@typescript-eslint/eslint-plugin': ^5.13.0
       '@typescript-eslint/parser': ^5.13.0
@@ -21,7 +22,8 @@ importers:
       vite: ^2.8.0
       vitest: ^0.6.0
     devDependencies:
-      '@ithinku/eslint-config-ts': 0.0.2_eslint@8.10.0+typescript@4.6.2
+      '@ithinku/eslint-config-ts': 0.0.4_eslint@8.10.0+typescript@4.6.2
+      '@ithinku/tsconfig': 0.0.4
       '@types/node': 17.0.21
       '@typescript-eslint/eslint-plugin': 5.13.0_33fffc354ccfa91fbe7d1677b9395a0a
       '@typescript-eslint/parser': 5.13.0_eslint@8.10.0+typescript@4.6.2
@@ -308,8 +310,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /@ithinku/eslint-config-base/0.0.2_eslint@8.10.0:
-    resolution: {integrity: sha512-ALvoz9cQ/ZBFIOm8fV8azlDWXdLF46mYpmmFKcdv67HGEjYSw3O7T4ZEEMz8QzpuU1EWCN8bTib8LGkhdKTWtQ==}
+  /@ithinku/eslint-config-base/0.0.4_eslint@8.10.0:
+    resolution: {integrity: sha512-fBUMUZHfog5NH/uu7cIwtNYDI5MycbMmwBY1StJpnu8mBmVj3JmGh8SFrFB4VfJQqkjoAVtz3IBQAOQ070l3lA==}
     peerDependencies:
       eslint: ^8.10.0
     dependencies:
@@ -319,21 +321,27 @@ packages:
       eslint-plugin-import: 2.25.4_eslint@8.10.0
       eslint-plugin-node: 11.1.0_eslint@8.10.0
       eslint-plugin-promise: 6.0.0_eslint@8.10.0
+      jsonc-eslint-parser: 2.1.0
+      yaml-eslint-parser: 0.5.0
     dev: true
 
-  /@ithinku/eslint-config-ts/0.0.2_eslint@8.10.0+typescript@4.6.2:
-    resolution: {integrity: sha512-dm5h2e8Wak54t50DFom69V3sfO9XeOHkBTMRM9ljBFs07Isu9G/IU+BtAqRc4f/t2bt5jBj6WRkwW5CAAAqiEA==}
+  /@ithinku/eslint-config-ts/0.0.4_eslint@8.10.0+typescript@4.6.2:
+    resolution: {integrity: sha512-0yBkmQAbEBbmzn8/y4L3fGAnmG5D5FCOna8Aq+EDe2geAbszmFJoI5MUOZBheQ56mEOOSRG+Ix7ZnBgb8KzXHA==}
     peerDependencies:
       eslint: ^8.10.0
       typescript: ^4.6.2
     dependencies:
-      '@ithinku/eslint-config-base': 0.0.2_eslint@8.10.0
+      '@ithinku/eslint-config-base': 0.0.4_eslint@8.10.0
       '@typescript-eslint/eslint-plugin': 5.13.0_33fffc354ccfa91fbe7d1677b9395a0a
       '@typescript-eslint/parser': 5.13.0_eslint@8.10.0+typescript@4.6.2
       eslint: 8.10.0
       typescript: 4.6.2
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@ithinku/tsconfig/0.0.4:
+    resolution: {integrity: sha512-k4s8+lLx7VGLaCz82J9LwgtbZ8tMdDtBC56Qls4WmKVGIPZJ3mTArlbBJRoCvzpJa/j38UwNlpad+lawqrkkzw==}
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -1982,6 +1990,16 @@ packages:
       minimist: 1.2.5
     dev: true
 
+  /jsonc-eslint-parser/2.1.0:
+    resolution: {integrity: sha512-qCRJWlbP2v6HbmKW7R3lFbeiVWHo+oMJ0j+MizwvauqnCV/EvtAeEeuCgoc/ErtsuoKgYB8U4Ih8AxJbXoE6/g==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dependencies:
+      acorn: 8.7.0
+      eslint-visitor-keys: 3.3.0
+      espree: 9.3.1
+      semver: 7.3.5
+    dev: true
+
   /jsonc-parser/2.3.1:
     resolution: {integrity: sha512-H8jvkz1O50L3dMZCsLqiuB2tA7muqbSg1AtGEkN0leAqGjsUzDJir3Zwr02BhqdcITPg3ei3mZ+HjMocAknhhg==}
     dev: true
@@ -2027,6 +2045,10 @@ packages:
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
+    dev: true
+
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: true
 
   /loupe/2.3.4:
@@ -3012,6 +3034,20 @@ packages:
 
   /yallist/4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+    dev: true
+
+  /yaml-eslint-parser/0.5.0:
+    resolution: {integrity: sha512-nJeyLA3YHAzhBTZbRAbu3W6xrSCucyxExmA+ZDtEdUFpGllxAZpto2Zxo2IG0r0eiuEiBM4e+wiAdxTziTq94g==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dependencies:
+      eslint-visitor-keys: 3.3.0
+      lodash: 4.17.21
+      yaml: 1.10.2
+    dev: true
+
+  /yaml/1.10.2:
+    resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
+    engines: {node: '>= 6'}
     dev: true
 
   /yargs-parser/20.2.9:

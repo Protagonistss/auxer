@@ -1,21 +1,6 @@
 {
+  "extends": "@ithinku/tsconfig",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "strict": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
-    "baseUrl": ".",
-    "allowJs": false,
-    "rootDir": ".",
-    "outDir": "dist",
-    "declaration": true,
-    "jsx": "preserve",
-    "types": [
-      "vite/client"
-    ]
-  },
-  "exclude": ["node_modules"]
+    "types": ["vite/client"]
+  }
 }
