@@ -1,6 +1,7 @@
 {
   "extends": "@ithinku/tsconfig",
   "compilerOptions": {
+    "rootDir": ".",
     "types": ["vite/client"]
   }
 }

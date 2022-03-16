@@ -3,8 +3,8 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Designer',
+  name: 'Main',
   setup() {
-    return () => <div>hello designer</div>
+    return () => <div>hello designer main</div>
   }
 })
