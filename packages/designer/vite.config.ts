@@ -13,7 +13,7 @@ export default defineConfig({
     },
     minify: 'esbuild',
     rollupOptions: {
-      external: ['vue']
+      external: ['vue', 'naive-ui']
     }
   }
 })

@@ -1,10 +1,8 @@
 <!-- @format -->
 
-<script setup lang="ts">
-import Examples from './components/Examples.vue'
-</script>
+<script setup lang="ts"></script>
 <template>
-  <Examples />
+  <Designer />
 </template>
 
 <style>

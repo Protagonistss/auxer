@@ -22,7 +22,8 @@
     "preview": "vite preview"
   },
   "peerDependencies": {
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "naive-ui": "^2.26.4"
   },
   "dependencies": {
     "vue": "^3.2.25"

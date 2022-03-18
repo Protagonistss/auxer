@@ -1,7 +1,7 @@
 /** @format */
 
 import { h, createApp } from 'vue'
-import Main from './components/main'
+import Main from './components/Main'
 
 const app = createApp({
   render: () => h(Main)

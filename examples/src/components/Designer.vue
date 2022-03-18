@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <script setup lang="ts">
-import { Designer } from '@auxer/designer'
+import { Designer } from '../../../packages/designer/src/index'
 import { onMounted } from 'vue'
 
 onMounted(() => {
@@ -10,7 +10,6 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1>Hello Examples</h1>
   <div id="mount-designer"></div>
 </template>
 
