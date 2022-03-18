@@ -8,15 +8,16 @@ import VueJsx from '@vitejs/plugin-vue-jsx'
 import { resolve } from 'path'
 
 export default defineConfig({
-  plugins: [vue(), 
-    VueJsx(), 
-    Components({ 
-      resolvers: [ NaiveUiResolver() ]
+  plugins: [
+    vue(),
+    VueJsx(),
+    Components({
+      resolvers: [NaiveUiResolver()]
     })
   ],
   resolve: {
     alias: {
-      "@": resolve(__dirname, 'src')
+      '@': resolve(__dirname, 'src')
     }
   },
   server: {
