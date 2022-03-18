@@ -1,0 +1,13 @@
+.dg-material__row {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding-left: 1px;
+  padding-right: 3px;
+  margin-top: 1px;
+  & .n-tag {
+    cursor: pointer;
+    &:nth-child(2) {
+      margin-left: 1px;
+    }
+  }
+}
