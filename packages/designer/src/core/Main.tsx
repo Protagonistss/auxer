@@ -10,7 +10,7 @@ import {
   NDrawer,
   NDrawerContent
 } from 'naive-ui'
-import Materials from './Materials'
+import Material from './Material'
 import Combination from './Combination'
 
 type THeaderButton = 'setting'
@@ -22,7 +22,7 @@ export default defineComponent({
     NLayoutSider,
     NMenu,
     NLayoutContent,
-    Materials,
+    Material,
     NLayoutHeader,
     NButton,
     Combination,
@@ -30,9 +30,8 @@ export default defineComponent({
     NDrawerContent
   },
   props: {
-    name: {
-      type: String,
-      default: ''
+    materialDataSource: {
+      type: Array
     }
   },
   setup() {
@@ -65,7 +64,7 @@ export default defineComponent({
             style={{ height: '100vh' }}
             collapsed-width={64}
           >
-            <Materials></Materials>
+            <Material dataSource={this.materialDataSource}></Material>
           </NLayoutSider>
           <NLayoutContent>
             <NLayout>

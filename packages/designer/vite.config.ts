@@ -1,4 +1,3 @@
-/** @format */
 import { defineConfig } from 'vite'
 import VueJsx from '@vitejs/plugin-vue-jsx'
 

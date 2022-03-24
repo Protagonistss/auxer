@@ -1,9 +1,18 @@
 <script setup lang="ts">
-import { Designer } from '../../../packages/designer/src/index'
+import { Designer, reloadSettings } from '../../../packages/designer/src/index'
+import type { ITree } from '../../../packages/designer/types'
 import { onMounted } from 'vue'
 
 onMounted(() => {
-  Designer('#mount-designer')
+  const settings: ITree[] = [
+    {
+      label: '基础组件',
+      value: 'baseCmp',
+      children: [{ label: '输入框', value: 'input' }]
+    }
+  ]
+  Designer('#mount-designer', { materialSettings: settings })
+  reloadSettings(settings)
 })
 </script>
 

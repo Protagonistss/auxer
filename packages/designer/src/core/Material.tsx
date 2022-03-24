@@ -5,6 +5,11 @@ import vuedraggable from 'vuedraggable'
 export default defineComponent({
   name: 'Materials',
   components: { NTag, vuedraggable },
+  props: {
+    dataSource: {
+      type: Array
+    }
+  },
   setup() {
     const materialPool = readonly(
       ref([
@@ -35,6 +40,8 @@ export default defineComponent({
     }
   },
   render() {
+    console.log('material', this.dataSource)
+    // reloadSettings()
     const { log } = this
     return (
       <NLayout>
