@@ -1,6 +1,7 @@
 import { defineComponent, ref, readonly } from 'vue'
 import { NLayout, NLayoutHeader, NLayoutContent, NTag } from 'naive-ui'
 import vuedraggable from 'vuedraggable'
+import { useMaterialStore } from '../store/index'
 
 export default defineComponent({
   name: 'Materials',
@@ -11,6 +12,8 @@ export default defineComponent({
     }
   },
   setup() {
+    const materialStore = useMaterialStore()
+    console.log('materialStore', materialStore.dataSource)
     const materialPool = readonly(
       ref([
         { text: '输入框', id: 'input' },
@@ -19,7 +22,6 @@ export default defineComponent({
         { text: '日期', id: 'datepicker' }
       ])
     )
-
     const vuedraggableSlots = {
       item: ({ element }: { element: { text: string } }) => (
         <section class={'dg-material__row'}>

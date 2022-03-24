@@ -23,14 +23,16 @@
   },
   "peerDependencies": {
     "naive-ui": "^2.26.4",
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "pinia": "^2.0.12"
   },
   "dependencies": {
-    "vue": "^3.2.25",
     "vuedraggable": "^4.1.0"
   },
   "devDependencies": {
+    "vue": "^3.2.25",
     "@vitejs/plugin-vue-jsx": "^1.3.8",
+    "pinia": "^2.0.12",
     "vite": "^2.8.0"
   }
 }

@@ -53,14 +53,15 @@ importers:
       vitepress: ^0.22.3
     devDependencies:
       unplugin-vue-components: 0.18.0_esbuild@0.14.25+vite@2.8.6
-      vite: 2.8.6
-      vitepress: 0.22.3
+      vite: 2.8.6_sass@1.49.9
+      vitepress: 0.22.3_sass@1.49.9
 
   examples:
     specifiers:
       '@auxer/designer': workspace:*
       '@vitejs/plugin-vue': ^2.2.0
       '@vitejs/plugin-vue-jsx': ^1.3.8
+      pinia: ^2.0.12
       typescript: ^4.5.4
       unplugin-vue-components: ^0.18.0
       vite: ^2.8.0
@@ -72,9 +73,10 @@ importers:
       '@auxer/designer': link:../packages/designer
       '@vitejs/plugin-vue': 2.2.4_vite@2.8.6+vue@3.2.31
       '@vitejs/plugin-vue-jsx': 1.3.8
+      pinia: 2.0.12_typescript@4.6.2+vue@3.2.31
       typescript: 4.6.2
       unplugin-vue-components: 0.18.0_a7039e81c98feef7fced93c24abe882a
-      vite: 2.8.6
+      vite: 2.8.6_sass@1.49.9
       vue-tsc: 0.29.8_typescript@4.6.2
 
   packages/creater:
@@ -83,15 +85,17 @@ importers:
   packages/designer:
     specifiers:
       '@vitejs/plugin-vue-jsx': ^1.3.8
+      pinia: ^2.0.12
       vite: ^2.8.0
       vue: ^3.2.25
       vuedraggable: ^4.1.0
     dependencies:
-      vue: 3.2.31
       vuedraggable: 4.1.0_vue@3.2.31
     devDependencies:
       '@vitejs/plugin-vue-jsx': 1.3.8
+      pinia: 2.0.12_typescript@4.6.2+vue@3.2.31
       vite: 2.8.6_sass@1.49.9
+      vue: 3.2.31
 
   packages/engine:
     specifiers: {}
@@ -904,7 +908,7 @@ packages:
       vite: ^2.5.10
       vue: ^3.2.25
     dependencies:
-      vite: 2.8.6
+      vite: 2.8.6_sass@1.49.9
       vue: 3.2.31
     dev: true
 
@@ -1022,6 +1026,10 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.31
       '@vue/shared': 3.2.31
+
+  /@vue/devtools-api/6.1.3:
+    resolution: {integrity: sha512-79InfO2xHv+WHIrH1bHXQUiQD/wMls9qBk6WVwGCbdwP7/3zINtvqPNMtmSHXsIKjvUAHc8L0ouOj6ZQQRmcXg==}
+    dev: true
 
   /@vue/reactivity-transform/3.2.31:
     resolution: {integrity: sha512-uS4l4z/W7wXdI+Va5pgVxBJ345wyGFKvpPYtdSgvfJfX/x2Ymm6ophQlXXB6acqGHtXuBqNyyO3zVp9b1r0MOA==}
@@ -2863,6 +2871,24 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
+  /pinia/2.0.12_typescript@4.6.2+vue@3.2.31:
+    resolution: {integrity: sha512-tUeuYGFrLU5irmGyRAIxp35q1OTcZ8sKpGT4XkPeVcG35W4R6cfXDbCGexzmVqH5lTQJJTXXbNGutIu9yS5yew==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.1.3
+      typescript: 4.6.2
+      vue: 3.2.31
+      vue-demi: 0.12.4_vue@3.2.31
+    dev: true
+
   /postcss/8.4.8:
     resolution: {integrity: sha512-2tXEqGxrjvAO6U+CJzDL2Fk2kPHTv1jQsYkSoMeOis2SsYaXRO2COxTdQp99cYvif9JTXaAk9lYGc3VhJt7JPQ==}
     engines: {node: ^10 || ^12 || >=14}
@@ -3452,30 +3478,6 @@ packages:
     resolution: {integrity: sha512-nguyw8L6Un8eelg1vQ31vIU2ESxqid7EYmy8V+MDeMaHBqaRSkg3dTBToC1PR00D89UzS/SLkfYPnx0Wf23IQQ==}
     dev: true
 
-  /vite/2.8.6:
-    resolution: {integrity: sha512-e4H0QpludOVKkmOsRyqQ7LTcMUDF3mcgyNU4lmi0B5JUbe0ZxeBBl8VoZ8Y6Rfn9eFKYtdXNPcYK97ZwH+K2ug==}
-    engines: {node: '>=12.2.0'}
-    hasBin: true
-    peerDependencies:
-      less: '*'
-      sass: '*'
-      stylus: '*'
-    peerDependenciesMeta:
-      less:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-    dependencies:
-      esbuild: 0.14.25
-      postcss: 8.4.8
-      resolve: 1.22.0
-      rollup: 2.70.0
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
   /vite/2.8.6_sass@1.49.9:
     resolution: {integrity: sha512-e4H0QpludOVKkmOsRyqQ7LTcMUDF3mcgyNU4lmi0B5JUbe0ZxeBBl8VoZ8Y6Rfn9eFKYtdXNPcYK97ZwH+K2ug==}
     engines: {node: '>=12.2.0'}
@@ -3501,7 +3503,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitepress/0.22.3:
+  /vitepress/0.22.3_sass@1.49.9:
     resolution: {integrity: sha512-Yfvu/rent2vp/TXIDZMutS6ft2TJPn4xngS48PYFWDEbuFI2ccUAXM481lF1qVVnCKxfh4g8e/KPvevSJdg1Bw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -3510,7 +3512,7 @@ packages:
       '@docsearch/js': 3.0.0
       '@vitejs/plugin-vue': 2.2.4_vite@2.8.6+vue@3.2.31
       prismjs: 1.27.0
-      vite: 2.8.6
+      vite: 2.8.6_sass@1.49.9
       vue: 3.2.31
     transitivePeerDependencies:
       - '@algolia/client-search'
@@ -3685,6 +3687,21 @@ packages:
       vscode-languageserver-textdocument: 1.0.4
       vscode-pug-languageservice: 0.29.8
       vscode-typescript-languageservice: 0.29.8
+    dev: true
+
+  /vue-demi/0.12.4_vue@3.2.31:
+    resolution: {integrity: sha512-ztPDkFt0TSUdoq1ZI6oD730vgztBkiByhUW7L1cOTebiSBqSYfSQgnhYakYigBkyAybqCTH7h44yZuDJf2xILQ==}
+    engines: {node: '>=12'}
+    hasBin: true
+    requiresBuild: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+    dependencies:
+      vue: 3.2.31
     dev: true
 
   /vue-tsc/0.29.8_typescript@4.6.2:
