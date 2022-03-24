@@ -1,5 +1,3 @@
-<!-- @format -->
-
 <script setup lang="ts">
 import { Designer } from '../../../packages/designer/src/index'
 import { onMounted } from 'vue'

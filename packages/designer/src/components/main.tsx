@@ -1,5 +1,3 @@
-/** @format */
-
 import { defineComponent, ref } from 'vue'
 import {
   NLayout,
@@ -31,7 +29,12 @@ export default defineComponent({
     NDrawer,
     NDrawerContent
   },
-  props: {},
+  props: {
+    name: {
+      type: String,
+      default: ''
+    }
+  },
   setup() {
     let showDraw = ref(false)
     const handleClickHeader = (arg: THeaderButton) => {

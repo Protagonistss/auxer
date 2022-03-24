@@ -1,5 +1,3 @@
-/** @format */
-
 import { defineComponent, ref } from 'vue'
 import vuedraggable from 'vuedraggable'
 import { NTag } from 'naive-ui'

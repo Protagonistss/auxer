@@ -4,6 +4,6 @@ singleQuote: true
 bracketSpacing: true
 tabWidth: 2
 useTabs: false
-insertPragma: true
+insertPragma: false
 arrowParens: avoid
 trailingComma: none

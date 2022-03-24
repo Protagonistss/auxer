@@ -1,4 +1,3 @@
-/** @format */
 import type { TUnknownReturnBool } from '../types'
 
 const _toString = Object.prototype.toString

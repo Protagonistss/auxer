@@ -1,4 +1,3 @@
-/** @format */
 const { readdirSync } = require('fs')
 const { resolve } = require('path')
 const { build } = require('esbuild')
