@@ -1,2 +1,45 @@
 .dg-main__wrapper {
 }
+
+.dg-canvas {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f8f9fb;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px
+    );
+  cursor: grab;
+  user-select: none;
+  transition: cursor 0.2s ease;
+
+  &.is-panning {
+    cursor: grabbing;
+  }
+
+  &__surface {
+    position: absolute;
+    inset: 0;
+    transform-origin: 0 0;
+  }
+
+  &__board {
+    min-width: 1200px;
+    min-height: 900px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__node {
+    width: 240px;
+  }
+}
